@@ -30,10 +30,10 @@ public class HomeServlet extends HttpServlet {
 		String clever_login_url = URLEncoder.encode(encoded_string, "UTF-8");
 		
 		PrintWriter html_out = response.getWriter(  ); 
-        response.setContentType("text/html"); 
-        html_out.print("<h1>Login!<br/><br/>");
-        html_out.print("<a href='https://clever.com/oauth/authorize?" + clever_login_url);
-        html_out.print("'><img src='http://assets.clever.com/sign-in-with-clever/sign-in-with-clever-small.png'/></a></h1>");
+        	response.setContentType("text/html"); 
+        	html_out.print("<h1>Login!<br/><br/>");
+        	html_out.print("<a href='https://clever.com/oauth/authorize?" + clever_login_url);
+        	html_out.print("'><img src='http://assets.clever.com/sign-in-with-clever/sign-in-with-clever-small.png'/></a></h1>");
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
